@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\ex1.css">
     <link rel="stylesheet" href="css\reset.css">
-    <title>Php hello world</title>
+    <link rel="stylesheet" href="css\ex1.css">
+    <title>Php salaries</title>
 </head>
 
 <body>
