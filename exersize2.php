@@ -14,15 +14,15 @@
     <form method="post" action="exersize2.php" id="mainform">
         <fieldset>
             <legend>My Birthday</legend>
-            <div>
+           
                 <?php
 
                 $username = $_POST['username'];
                 $birthday = $_POST["birthday"];
-                $conv_birthday = date("d M Y", strtotime($birthday));
+                $conv_birthday = date("d-M-Y", strtotime($birthday));
 
-                print("<p>Hello " . $username . " your birthday is on: " . $conv_birthday . "</p>");
-                print("<p>Today is " . date("d F Y") . "</p>");
+                print("<p>Hello " . $username . " your birthday is on: <strong>" . $conv_birthday . "</strong></p>");
+                print("<p>Today's date is " . date("d F Y") . "</p>");
 
                 //Current time and date
                 $current_time = strtotime(date("Y-m-d H:i:s"));
@@ -41,11 +41,11 @@
                 $months = floor($difference / 2592000);
                 $years = floor($difference / 31536000);
 
-                print("<p> Since your birthday," . $difference . " seconds have passed, or " . $mins . " minutes, or " . $hours . " hours, or " . $days . " days, or " . $months . " months, or " . $years . " years</p>");
+                print("<p> Since your birthday, " . $difference . " seconds have passed, or " . $mins . " minutes, or " . $hours . " hours, or " . $days . " days, or " . $months . " months, or " . $years . " years have passed.</p>");
 
 
                 ?>
-            </div>
+         
 
             <script src="js/ex2.js"></script>
         </fieldset>
